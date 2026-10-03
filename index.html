@@ -1,0 +1,93 @@
+<html>
+  <head>  
+<link rel="stylesheet" href="./style.css">
+<title>Pen</title>
+  </head>
+  <body>
+    <header><h1>Rachit Garg</h1><!-- Head details -->
+    <p>Motivated B.Tech CSE student with strong foundations in programming, web development, and computer science concepts. Skilled in C++, Java, Python, and front-end technologies. Passionate about Artificial Intelligence, Machine Learning, and building practical software solutions. Quick learner with hands-on experience through academic projects and certifications.</p>
+    </header>
+    <main>   <!--  Main content   -->
+      <button id="Toggle-theme">Toggle</button>
+      <nav>
+        <ul>
+          <li><a href="#Eduaction">Education</a></li>
+          <li id="Projects"><a href="#Projects">Projects </a></li>
+          <li><a href="#Contact Me">Contact Me</a></li>
+          <li><a href="#admin-login" onClick="ShowAdminLogin()">Admin Login</a></li>
+        </ul>
+      </nav>
+      <section id="Education" class="section-style">
+      <h2 id="edu">Education</h2>
+      
+        <h3>Kalinga Institute Of Industrial Technology,BBSR</h3>
+      <p>Btech CSE</p>
+      <p>Currently in 3rd Year</p>
+        <p>Current CGPA :- 7.47</p>
+        <p>2024-28</p>
+        <hr>
+
+        <h3>R.K.Educational School, SKD, BSR</h3>
+      <p>Science Stream</p>
+      <p>12th</p>
+        <p>2024</p>
+      </section>
+      <section id="Projects" class="section-style">
+      <h2>Projects</h2>
+      <h3>PPE Detection System</h3>
+        <p>Developed a basic object detection model to identify safety helmets and masks using Python and OpenCV. Explored concepts of Computer Vision and YOLO for real-time detection.
+Helped in understanding how AI can be used for workplace safety.</p>
+        <hr>
+        
+      <h3>Library Management System</h3>
+      <p>Built a console-based library management system using C++. Applied OOPS concepts like classes, objects, and file handling. Managed book records, issue/return system, and user data.</p></section>
+      <section id="Contact-Me" class="section-style">
+      <h2>Contact Me</h2>
+      <div><form id= "contact-form">
+        <div>  <!-- for different section -->
+        <label>Name</label>
+        <input type="text" id="name" required>
+        </div> 
+        <div>
+        <label>Email</label>
+        <input type="email" id="email" required>
+        </div>
+         <div>
+        <label>Message</label>
+        <textarea id="message"></textarea>
+        </div>
+        <button type="Submit">Send</button>
+      </form>
+     </div>
+      </section>
+      <section id="admin-login" class="section-style">
+      <h2>Admin Login</h2>
+      <form id="admin-form">
+        <div>  <!-- for different section -->
+        <label>Username</label>
+        <input type="text" id="input-username"required>
+        </div> 
+        <div>
+        <label>Passsword</label>
+        <input type="password" id="input-password" required>
+        </div>
+        <button type="Submit">Login</button>
+      </form>
+     
+      </section>
+      <section id="User-Messages" class="section-style">
+        <h2>User Messages</h2>
+        <div id = "user-responses">
+
+          
+        </div> <!-- we will type nothing in user messages because we will never know how many user messages we have in current time through html because every detail will need its different html code -->
+        <!-- like if we suppose code for 10 user meassages then what will happen if their will be 11th user message, So for this we write its code in javascipt as it directly communicated with the database.  -->
+      </section>
+      
+    </main>
+    <footer>
+      <center>Created with ♥︎ by Rachit Garg | ©2026
+      </center>
+    </footer><script src="./script.js"></script>
+  </body>
+</html>
